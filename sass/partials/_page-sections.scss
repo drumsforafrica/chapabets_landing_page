@@ -1,0 +1,503 @@
+// Homepage start
+.home-wrap {
+  padding-top: 0;
+  .sp-vert-lg {
+    padding-top: 0;
+  }
+  @media(max-width:768px) {
+    .c7, .c8 {
+      width: 100%;
+    }
+    .c5, .c4 {
+      width: 100%;
+    }
+  }
+}
+.hero-wrap {
+  color: $white;
+  // width: 33%;
+  text-align: center;
+  // line-height: 1;
+  width: 88%;
+  margin: 0 auto;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+  p {
+    // padding: 0 72px;
+    text-align: left;
+    @media(max-width:768px) {
+      // padding: 0 12px;
+    }
+  }
+  .first {
+    font-size: 1.25em;
+    line-height: 1.3;
+    strong {
+      font-size: 1.125em;
+      font-weight: bold;
+    }
+    @media(max-width:500px) {
+      font-size: 1.25em;
+    }
+    @media(max-width:360px) {
+      font-size: 1em;
+    }
+    @media(max-width:300px) {
+      font-size: 0.75em;
+    }
+  }
+  .description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+    // font-weight: bold;
+    line-height: 1.5;
+    @media(max-width:500px) {
+      font-size: 1em;
+    }
+    @media(max-width:360px) {
+      font-size: 0.813em;
+    }
+    @media(max-width:300px) {
+      font-size: 0.5em;
+    }
+  }
+  h1 {
+    font-weight: normal;
+    font-size: 2.438em;
+    line-height: 1.35;
+    @media(min-width:1024px) {
+      font-size: 1.75em;
+    }
+    @media(max-width:768px) {
+      // font-size: 2.188em;
+    }
+    @media(max-width:500px) {
+      font-size: 1.25em;
+    }
+    @media(max-width:360px) {
+      font-size: 1em;
+    }
+    @media(max-width:300px) {
+      font-size: 0.75em;
+    }
+  }
+  h2 {
+  }
+  h3 {
+    span {
+      color: $light-green;
+    }
+    color: $white;
+    font-size: 3.6em;
+    @media(min-width:1024px) {
+      font-size: 2.688em;
+    }
+    @media(max-width:768px) {
+      font-size: 2em;
+    }
+    @media(max-width:500px) {
+      font-size: 1.875em;
+    }
+    @media(max-width:360px) {
+      font-size: 1.5em;
+    }
+    @media(max-width:300px) {
+      font-size: 1.125em;
+    }
+  }
+  .divider {
+    // border-top: 1px $white solid;
+    border-color: $white;
+    border-style: solid;
+    // border-width: .1em;
+    border-width: 1px;
+    margin: 0 auto;
+    width: 40%;
+    @media(min-width:2000px) {
+      width: 29%;
+    }
+    @media(max-width:1440px) {
+      width: 54%;
+    }
+    @media(max-width:1366px) {
+      width: 58%;
+    }
+    @media(max-width:1024px) {
+      width: 78%;
+    }
+    @media(max-width:768px) {
+      width: 84%;
+    }
+    @media(max-width:500px) {
+      width: 80%;
+    }
+    @media(max-width:375px) {
+      width: 92%;
+    }
+    @media(max-width:360px) {
+      width: 88%;
+    }
+    @media(max-width:300px) {
+      width: 90%;
+    }
+  }
+  .cta-headline {
+    font-size: 7em;
+    text-transform: uppercase !important;
+    font-weight: $bold;
+    line-height: 0.75;
+    margin-bottom: 10px;
+    color: $light-green;
+    @media(min-width:1024px) {
+      font-size: 5.438em;
+    }
+    @media(max-width:768px) {
+      font-size: 4em;
+    }
+    @media(max-width:500px) {
+      font-size: 3.625em;
+    }
+    @media(max-width:360px) {
+      font-size: 3em;
+    }
+    @media(max-width:300px) {
+      font-size: 2.25em;
+      margin-top: -0.35em;
+    }
+  }
+  @media(max-width:1366px) {
+    width: 91%;
+  }
+  @media(max-width:768px) {
+    width: 100%;
+    .c6 {
+      width: 100%;
+    }
+  }
+  @media(max-width:320px) {
+    .c6 {
+      padding-left: 0;
+      margin-bottom: 0.188em;
+    }
+  }
+}
+
+// How it works
+.how-it-works {
+  width: 100%;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+  .section-title {
+    color: $light-green;
+    font-size: 1.5em;
+    text-align: center;
+    @media(max-width:300px) {
+      font-size: 1em;
+    }
+  }
+  .steps-wrap {
+    border-top: 1px solid $light-green;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 94%;
+
+    // text-align: center;
+    ol {
+      list-style: none;
+      counter-reset: li;
+    }
+    li {
+      counter-increment: li;
+    }
+    li::before {
+      content: counter(li);
+      color: $light-green !important;
+      display: inline-block;
+      margin-right: 10px;
+      margin-left: -20px;
+
+    }
+    #step-list {
+      // margin-left: -20px;
+      // list-style-position: outside;
+      // list-style-type: decimal;
+      margin-top: 0;
+      margin-left: 25px;
+      &:before {
+        color: $light-green;
+      }
+      li {
+        color: $white;
+        font-size: 1.25em;
+        font-weight: $bold;
+        width: 28%;
+        float: left;
+        margin-right: 5.3%;
+        margin-bottom: 15px;
+        // word-wrap: break-word;
+        // display: inline-block;
+        &:before {
+          color: $light-green !important;
+        }
+        &:last-of-type {
+          margin-right: 0 !important;
+        }
+        @media(min-width:2560px) {
+          width: 30% !important;
+          margin-right: 4% !important;
+          &:last-of-type {
+            margin-right: 0;
+
+          }
+        }
+        @media(min-width:1920px) {
+          width: 26%;
+          margin-right: 9%;
+          &:last-of-type {
+            margin-right: 0;
+
+          }
+        }
+        @media(max-width:1440px) {
+          // margin-right: 20px;
+          font-size: 1em;
+        }
+        @media(max-width:1366px) {
+          width: 30%;
+          // margin-right: auto;
+          margin-right: 2.3%;
+        }
+        @media(max-width:1024px) {
+          font-size: 0.875em;
+          line-height: normal;
+        }
+        @media(max-width:768px) {
+          width: 24%;
+          margin-right: 5%;
+          margin-left: 4%;
+        }
+        @media(max-width:500px) {
+          width: 100%;
+          margin-left: 0;
+        }
+        @media(max-width:300px) {
+          font-size: 0.688em;
+          margin-bottom: 1em;
+        }
+      }
+      @media(max-width:1024px) {
+        margin-left: -5px;
+        // margin-right: 2.3%;
+      }
+    }
+    // .step {
+    //   width: auto;
+    //   display: inline-block;
+    //   margin-right:15px;;
+    //   span {
+    //     color: $light-green;
+    //     font-size: 1.625em;
+    //     font-weight: $bold;
+    //     margin-right: 7px;
+    //     display: inline;
+    //   }
+    // }
+    // p {
+    //   color: $white;
+    //   font-size: 1.25em;
+    //   font-weight: $bold;
+    //   display: inline;
+    // }
+    @media(min-width:2560px) {
+      width: 90%;
+    }
+    @media(max-width:1024px) {
+      width: 100%;
+    }
+  }
+  @media(max-width:768px) {
+    margin-bottom: 1.5em;
+  }
+}
+.tip-wrap, .hot-money-wrap {
+  width: 94%;
+  margin: 5em auto 8em auto;
+  border: 1px $white solid;
+  padding: 0 30px;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+  .todays-tip {
+    .section-title {
+      color: $light-green;
+      text-align: center;
+      @media(max-width:320px) {
+        font-size: 1em;
+      }
+    }
+    h3 {
+      color: $white;
+      font-size: 1.375em;
+      @media(max-width:500px) {
+        font-size: 1.3em;
+      }
+      @media(max-width:360px) {
+        font-size: 1em;
+      }
+    }
+    p {
+      color: $white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      @media(max-width:360px) {
+        font-size: 0.875em;
+      }
+    }
+    strong {
+      font-weight: bold;
+    }
+    .league {
+      margin-bottom: 0.375em;
+      font-weight:bold;
+    }
+    .venue, .date {
+
+      font-size: 0.875em;
+      margin-bottom: 0.375em;
+    }
+    .tip-content {
+      font-family: 'Open Sans', sans-serif;
+      padding-top: 0.313em;
+      p {
+        font-size: 1.063em;
+        line-height: 1.35;
+        @media(max-width:360px) {
+          font-size: 0.875em;
+        }
+      }
+    }
+  }
+  @media (max-width: 30em){
+    .col {
+        width: 100%;
+        margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 1366px){
+    margin: 4em auto 8em auto;
+  }
+  @media (max-width: 768px){
+    width: 100%;
+    margin: 3em auto 1.5em auto;
+  }
+  @media (max-width: 500px){
+    margin: 6em auto 1em auto;
+  }
+  @media (max-width: 320px){
+    margin: 7em auto 0.65em auto;
+    padding: 0 20px;
+  }
+}
+
+.hot-money-wrap {
+  width: 100%;
+  color: $dark-grey;
+  text-shadow: none;
+  margin: 0 auto;
+  border: none;
+  padding: 0;
+  .tip {
+    .section-title {
+      color: $light-green;
+      text-align: center;
+      @media(max-width:320px) {
+        font-size: 1em;
+      }
+    }
+    h3 {
+      color: $light-green;
+      font-size: 1.375em;
+      @media(max-width:500px) {
+        font-size: 1.3em;
+      }
+      @media(max-width:360px) {
+        font-size: 1em;
+      }
+    }
+    p {
+      color: $dark-grey;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      @media(max-width:360px) {
+        font-size: 0.875em;
+      }
+    }
+    strong {
+      font-weight: bold;
+    }
+    .league {
+      margin-bottom: 0.375em;
+      font-weight:bold;
+    }
+    .venue, .date {
+
+      font-size: 0.875em;
+      margin-bottom: 0.375em;
+    }
+    .tip-content {
+      font-family: 'Open Sans', sans-serif;
+      padding-top: 0.313em;
+      p {
+        font-size: 1.063em;
+        line-height: 1.35;
+        @media(max-width:360px) {
+          font-size: 0.875em;
+        }
+      }
+    }
+  }
+
+}
+
+.cta-wrap {
+  text-align: center;
+  margin-top: 2em;
+  @media(max-width:768px) {
+    margin-top: 0;
+  }
+}
+
+.subscription-wrap {
+  margin-top: 1em;
+  h2 {
+    color: $white;
+  }
+  .basic-subscription {
+    .title {
+      text-align: center;
+      background-color: $purple;
+      padding:10px 0 3px 0;
+      margin-top: 1.75em;
+    }
+    border-bottom: 2px $purple solid;
+    p {
+      margin-top: 1em;
+      color: $white;
+      text-align: center;
+      font-size: 1.188em;
+    }
+  }
+  .vip-subscription {
+    .title {
+      text-align: center;
+      background-color: $gold;
+      padding:10px 0 3px 0;
+      margin-top: 1.75em;
+    }
+    border-bottom: 2px $gold solid;
+    p {
+      margin-top: 1em;
+      color: $white;
+      text-align: center;
+      font-size: 1.188em;
+    }
+  }
+
+}

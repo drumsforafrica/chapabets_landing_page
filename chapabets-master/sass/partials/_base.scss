@@ -1,0 +1,39 @@
+
+@import "compass";
+@import "compass/css3";
+@import "compass/utilities";
+
+
+html {
+    position: relative;
+    min-height: 100%;
+    #general {
+      background: lighten(#cccccc, 14%);
+      background-color: lighten(#cccccc, 14%);
+      background-color: #cccccc;
+
+    }
+}
+body {
+    margin: 0 0 100px;
+    z-index: 0;
+    font-family: 'Roboto Slab', serif;
+    // background-color: #f0f0f0;
+    // background: lighten(#cccccc, 14%);
+    // background-color: lighten(#cccccc, 14%);
+    // background: #EEEEEE;
+    background-color: #EEEEEE;
+    background: #EEEEEE;
+    @media(max-width:450px) {
+      background-color: #DDDDDD;
+      background: #DDDDDD;
+    }
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
